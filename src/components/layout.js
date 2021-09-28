@@ -156,6 +156,8 @@ const Layout = ({ children }) => {
         <References referenceList={referenceList}></References>
       </Block>
 
+      <main>{children}</main>
+
       <footer
         style={{
           margin: `2rem auto`,

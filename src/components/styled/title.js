@@ -6,6 +6,7 @@ export const StyledTitle = styled.h1`
   display: block;
   text-align: left;
   font-weight: bold;
+  user-select: none;
 
   @media screen and (max-width: 1120px) {
     font-size: 15vw;
@@ -19,6 +20,7 @@ export const StyledSubtitle = styled.h2`
   display: block;
   text-align: left;
   font-weight: bold;
+  user-select: none;
 
   @media screen and (max-width: 1120px) {
     font-size: 5.5vw;

@@ -23,6 +23,7 @@ export const StyledContactList = styled.div`
   @media screen and (max-width: 1120px) {
     a {
       display: block;
+      margin: .5rem 0;
     }
   }
 `;

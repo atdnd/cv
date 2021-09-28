@@ -8,8 +8,8 @@ export const StyledTitle = styled.h1`
   font-weight: bold;
 
   @media screen and (max-width: 1120px) {
-    font-size: 15vw;
-    line-height: 15vw;
+    font-size: 16vw;
+    line-height: 16vw;
   }
 `;
 
@@ -20,7 +20,7 @@ export const StyledSubtitle = styled.h2`
   font-weight: bold;
 
   @media screen and (max-width: 1120px) {
-    font-size: 4vw;
-    line-height: 4.25vw;
+    font-size: 5vw;
+    line-height: 5.25vw;
   }
 `;

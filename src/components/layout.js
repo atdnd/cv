@@ -20,18 +20,18 @@ import InlineList from "./inlineList"
 
 const referenceList = [
   {
-    name: 'Katia Przysiezny',
-    position: 'Scrum Master',
-    company: 'US Bank',
-    companyLink: 'https://www.usbank.com/',
-    email: 'kfprzysiezny@gmail.com'
-  },
-  {
     name: 'Dahiana Fuentes',
     position: 'Technology Manager',
     company: 'Globant',
     companyLink: 'https://www.globant.com/',
     phone: '+59897549572'
+  },
+  {
+    name: 'Katia Przysiezny',
+    position: 'Scrum Master',
+    company: 'US Bank',
+    companyLink: 'https://www.usbank.com/',
+    email: 'kfprzysiezny@gmail.com'
   },
   {
     name: 'Alejandro Gimenez',

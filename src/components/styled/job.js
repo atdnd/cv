@@ -8,5 +8,8 @@ export const StyledJob = styled.article`
   min-height: 20vh;
   background: ${(props) => props.isNegative ? `var(--color-main)` : `transparent`}; 
   color: ${(props) => props.isNegative ? `#fff` : `var(--color-main)`}; 
-  margin-bottom: 2rem;
+  
+  + article {
+    margin-top: 1.5rem;
+  }
 `;

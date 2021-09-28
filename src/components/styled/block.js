@@ -12,6 +12,17 @@ export const StyledBlock = styled.section`
 
   > div {
     max-width: 960px;
+    width: 100%;
     margin-left: 10vw;
+  }
+
+
+
+  @media screen and (max-width: 1120px) {
+    padding: 1.5rem;
+
+    > div {
+      margin-left: 0;
+    }
   }
 `;

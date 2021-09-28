@@ -23,6 +23,24 @@ const StyledHeader = styled.header`
     left: 5vw;
     top: 0;
   }
+
+  @media screen and (max-width: 1120px) {
+    > div {
+      max-width: 960px;
+      margin-left: 0;
+    }
+   
+    &:before {
+      content: "";
+      display: block;
+      width: 8px;
+      background: var(--color-main);
+      height: 100vh;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
 `;
 
 export default StyledHeader;

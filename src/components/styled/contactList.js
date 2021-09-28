@@ -1,12 +1,6 @@
 import styled from "@emotion/styled"
 
 export const StyledContactList = styled.div`
-  display: flex;
-
-  h2 {
-    display: inline-block;
-  }
-
   a {
     margin: .25rem;
     display: inline-block;
@@ -23,6 +17,12 @@ export const StyledContactList = styled.div`
       border-color: var(--color-secondary);
       background: ${(props) => props.isNegative ? `var(--color-secondary)` : `transparent`}; 
       color: ${(props) => props.isNegative ? `#fff` : `var(--color-secondary)`}; 
+    }
+  }
+
+  @media screen and (max-width: 1120px) {
+    a {
+      display: block;
     }
   }
 `;

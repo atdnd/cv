@@ -27,6 +27,21 @@ const referenceList = [
     email: 'kfprzysiezny@gmail.com'
   },
   {
+    name: 'Dahiana Fuentes',
+    position: 'Technology Manager',
+    company: 'Globant',
+    companyLink: 'https://www.globant.com/',
+    phone: '+59897549572'
+  },
+  {
+    name: 'Alejandro Gimenez',
+    position: 'Application Security Engineer',
+    company: 'Talpa Network',
+    companyLink: 'https://talpanetwork.com/',
+    email: 'alejandrogimenezes@gmail.com',
+    phone: '+31626774190'
+  },
+  {
     name: 'Guillermo López',
     position: 'Principal Front End Engineer',
     company: 'PedidosYa',
@@ -47,15 +62,7 @@ const referenceList = [
     company: 'Lexart Labs',
     companyLink: 'https://www.lexartlabs.com/',
     email: 'leonel@lexartlabs.com'
-  },
-  {
-    name: 'Alejandro Gimenez',
-    position: 'Application Security Engineer',
-    company: 'Talpa Network',
-    companyLink: 'https://talpanetwork.com/',
-    email: 'alejandrogimenezes@gmail.com',
-    phone: '+31626774190'
-  },
+  },  
 ];
 
 const technologyList = [
@@ -104,7 +111,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteDescription={data.site.siteMetadata?.description} />
       <Block isNegative title="About me">
         <p>
-          I'm a 34 years old programmer and manager with more than 10 years of experience in the industry.
+          I'm Andres Techera, a 34 years old programmer and manager with more than 10 years of experience in the industry.
           My personal and professional goals are aimed towards making a great impact in the companies and the people I work with.
           I love mentoring, tutoring and empowering development teams from both the technical and the human aspect.
           I'm invested mostly in Front-End development and design but I also have had experience working in other areas in engineering such as DevOPS, Architecture and Back-end development.
@@ -116,9 +123,9 @@ const Layout = ({ children }) => {
       <Block title="Skills">
         <p>
           My leadership skills can be summarized as a "lead by example" type of leader. I consider myself creative, open and honest.<br />
-          All that said I have a web developer background and I'm a designer at heart.
           My core strengths are in the Front-End area of development mostly in <strong><a href="https://reactjs.org" title="Visit React homepage" rel='noreferrer' target='_blank'>React</a></strong>,             <strong>javascript</strong>, <strong><acronym title='Hypertext Markup Language'>HTML</acronym></strong> and <strong><acronym title='Cascading Style Sheets'>CSS</acronym></strong> but I'm also experienced
           in Back-End languages, DevOPS and Design tools.
+          All that said I have a web developer background and I'm a designer at heart.
         </p>
         <InlineList title="Technologies" items={technologyList} isNegative />
 
@@ -154,7 +161,7 @@ const Layout = ({ children }) => {
           textAlign: `center`
         }}
       >
-        © {new Date().getFullYear()}, Built with Gatsby and React-pdf
+        © {new Date().getFullYear()}, Built with Gatsby
       </footer>
     </>
   )

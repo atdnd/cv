@@ -1,8 +1,14 @@
+const stylesString = `
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap');
+`;
+
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Andres Techera`,
+    description: `I'm a Front End developer and Engineering manager with a passion for software design, leadership and mentoring.`,
+    author: `@Andertech`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -31,6 +37,38 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Bebas Neue', 'Open Sans']
+        }
+      }
+    },
+    `gatsby-plugin-preload-fonts`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content/`,
+      },
+    },
+    "gatsby-plugin-mdx",
+    {
+			resolve: 'gatsby-plugin-pdf',
+			options: {
+				paths: ['/', '/pdf'],
+				outputPath: '/public/exports',
+        styleTagOptions: {
+          path: 'src/components/layout.css'
+        },
+        pdfOptions: {
+          scale: .75,
+          printBackground: true,
+          height: "6000px",
+        }
+			},
+		},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

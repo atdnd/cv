@@ -6,7 +6,6 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -77,7 +76,7 @@ const contactInfo = {
   email: 'atecheradnd@gmail.com',
 }
 
-const Layout = ({ children, isPrint = false }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -102,7 +101,7 @@ const Layout = ({ children, isPrint = false }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteDescription={data.site.siteMetadata?.description} isPrint={isPrint} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} siteDescription={data.site.siteMetadata?.description} />
       <Block isNegative title="About me">
         <p>
           I'm a 34 years old programmer and manager with more than 10 years of experience in the industry.
@@ -116,7 +115,8 @@ const Layout = ({ children, isPrint = false }) => {
       </Block>
       <Block title="Skills">
         <p>
-          I have a web developer background and I'm a designer at heart.
+          My leadership skills can be summarized as a "lead by example" type of leader. I consider myself creative, open and honest.<br />
+          All that said I have a web developer background and I'm a designer at heart.
           My core strengths are in the Front-End area of development mostly in <strong><a href="https://reactjs.org" title="Visit React homepage" rel='noreferrer' target='_blank'>React</a></strong>,             <strong>javascript</strong>, <strong><acronym title='Hypertext Markup Language'>HTML</acronym></strong> and <strong><acronym title='Cascading Style Sheets'>CSS</acronym></strong> but I'm also experienced
           in Back-End languages, DevOPS and Design tools.
         </p>
@@ -159,10 +159,5 @@ const Layout = ({ children, isPrint = false }) => {
     </>
   )
 }
-
-Layout.propTypes = {
-  // children: PropTypes.node.isRequired,
-}
-
 
 export default Layout

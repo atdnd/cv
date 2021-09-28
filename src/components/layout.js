@@ -79,7 +79,7 @@ const methodologiesList = [
 ];
 
 const contactInfo = {
-  linkedin: 'https://www.linkedin.com/in/andrestechera8a436a25/',
+  linkedin: 'https://www.linkedin.com/in/andrestechera',
   phone: '+59898935899',
   email: 'atecheradnd@gmail.com',
 }

@@ -8,8 +8,8 @@ export const StyledTitle = styled.h1`
   font-weight: bold;
 
   @media screen and (max-width: 1120px) {
-    font-size: 16vw;
-    line-height: 16vw;
+    font-size: 15vw;
+    line-height: 15vw;
   }
 `;
 

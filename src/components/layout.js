@@ -24,6 +24,7 @@ const referenceList = [
     position: 'Technology Manager',
     company: 'Globant',
     companyLink: 'https://www.globant.com/',
+    email: 'dahifu84@gmail.com',
     phone: '+59897549572'
   },
   {

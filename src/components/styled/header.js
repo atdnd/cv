@@ -8,6 +8,10 @@ const StyledHeader = styled.header`
   padding: 2rem;
   height: ${(props) => props.isPrint ? `auto` : `calc(100vh - 2rem)`};
   
+  .print-title {
+    display: none;
+  }
+
   > div {
     max-width: 960px;
     margin-left: 10vw;
@@ -44,6 +48,17 @@ const StyledHeader = styled.header`
 
   @media only print {
     height: 45vh;
+
+    .print-title {
+      font-family: var(--font-feature);
+      display: block;
+      font-size: 50px;
+      line-height: 60px;
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      user-select: none;
+    }
 
     > div {
       max-width: 100%;

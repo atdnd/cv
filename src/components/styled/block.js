@@ -27,6 +27,8 @@ export const StyledBlock = styled.section`
   @media only print {
     min-height: ${(props) => props.isNegative ? `0` : `100vh`};   
     page-break-before: ${(props) => props.isNegative ? `none` : `always`}; 
+    background: transparent; 
+    color: var(--color-main); 
 
     > div {
       margin-left: 0;

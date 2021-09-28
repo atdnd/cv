@@ -15,8 +15,7 @@ export const StyledTitle = styled.h1`
   }
 
   @media only print {
-    font-size: 50px;
-    line-height: 60px;
+    display: none;
   }
 `;
 

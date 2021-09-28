@@ -26,4 +26,18 @@ export const StyledContactList = styled.div`
       margin: .5rem 0;
     }
   }
+
+  @media only print {
+    a {
+      background: transparent; 
+      color: var(--color-main);
+      padding: 0;
+      border: 0;
+      border-bottom: 1px solid var(--color-main);
+
+      + a {
+        margin-left: 25px;
+      }
+    }
+  }
 `;

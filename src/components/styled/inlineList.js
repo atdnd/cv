@@ -24,4 +24,11 @@ export const StyledInlineList = styled.div`
       }
     }
   }
+
+  @media only print {
+    ul li {
+      background: transparent; 
+      color: var(--color-main); 
+    }
+  }
 `;

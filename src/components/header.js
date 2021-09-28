@@ -11,6 +11,7 @@ const Header = ({ siteTitle, siteDescription }) => (
       <StyledTitle>
         <Typewriter options={{ strings: [titleText], loop: true, autoStart: true }} />
       </StyledTitle>
+      <span className="print-title">{titleText}</span>
       <StyledSubtitle>{siteDescription}</StyledSubtitle>
     </div>
   </StyledHeader>

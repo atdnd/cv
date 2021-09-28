@@ -1,9 +1,3 @@
-const stylesString = `
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&display=swap');
-`;
-
-
 module.exports = {
   siteMetadata: {
     title: `Andres Techera`,
@@ -45,7 +39,6 @@ module.exports = {
         }
       }
     },
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

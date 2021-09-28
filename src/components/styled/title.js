@@ -10,6 +10,7 @@ export const StyledTitle = styled.h1`
   @media screen and (max-width: 1120px) {
     font-size: 15vw;
     line-height: 15vw;
+    letter-spacing: -2px;
   }
 `;
 
@@ -22,5 +23,6 @@ export const StyledSubtitle = styled.h2`
   @media screen and (max-width: 1120px) {
     font-size: 5vw;
     line-height: 5.25vw;
+    letter-spacing: -2px;
   }
 `;

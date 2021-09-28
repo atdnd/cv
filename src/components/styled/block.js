@@ -16,8 +16,6 @@ export const StyledBlock = styled.section`
     margin-left: 10vw;
   }
 
-
-
   @media screen and (max-width: 1120px) {
     padding: 1.5rem;
 

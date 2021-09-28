@@ -23,4 +23,14 @@ export const StyledBlock = styled.section`
       margin-left: 0;
     }
   }
+
+  @media only print {
+    min-height: ${(props) => props.isNegative ? `0` : `100vh`};   
+    page-break-before: ${(props) => props.isNegative ? `none` : `always`}; 
+
+    > div {
+      margin-left: 0;
+    }
+  }
+
 `;

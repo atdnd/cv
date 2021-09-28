@@ -563,3 +563,9 @@ pre tt:after {
     font-size: 90%;
   }
 }
+
+@media only print {
+  html {
+    font-size: 90%;
+  }
+}

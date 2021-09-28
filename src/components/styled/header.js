@@ -41,6 +41,20 @@ const StyledHeader = styled.header`
       top: 0;
     }
   }
+
+  @media only print {
+    height: 45vh;
+
+    > div {
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
 `;
 
 export default StyledHeader;

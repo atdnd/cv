@@ -12,4 +12,8 @@ export const StyledJob = styled.article`
   + article {
     margin-top: 1.5rem;
   }
+
+  @media only print {
+    page-break-inside: avoid;
+  }
 `;
